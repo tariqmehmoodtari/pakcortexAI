@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    background-color: #333;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 160px); /* Adjusted for header and footer height */
+    padding: 20px;
+    position: relative; /* for positioning the logo */
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: auto;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat-box {
+    width: 100%;
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.chat-message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    color: black;
+    word-wrap: break-word;
+}
+
+.chat-message.user {
+    background: rgba(0, 150, 255, 0.3);
+    text-align: right;
+}
+
+.chat-message.chatgpt {
+    background: rgba(0, 255, 150, 0.3);
+}
+
+#chat-form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#chat-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+#chat-form button {
+    padding: 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #ff7e5f;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
